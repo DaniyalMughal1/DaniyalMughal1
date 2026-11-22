@@ -1,0 +1,3 @@
+duel/node_modules/
+# local review renders (regenerate with `cd duel && bun run preview`)
+preview/

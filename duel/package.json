@@ -1,0 +1,22 @@
+{
+  "name": "duel",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bun src/build.ts",
+    "preview": "bun src/capture.ts",
+    "sheet": "bun src/capture.ts sheet",
+    "embed": "bun src/embedtest.ts",
+    "check": "bun --bun ./node_modules/typescript/bin/tsc --noEmit -p .",
+    "all": "bun src/build.ts && bun src/capture.ts && bun src/embedtest.ts"
+  },
+  "dependencies": {
+    "opentype.js": "1.3.4"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.5",
+    "@types/opentype.js": "1.3.8",
+    "playwright-core": "1.62.1",
+    "typescript": "5.6.3"
+  }
+}
